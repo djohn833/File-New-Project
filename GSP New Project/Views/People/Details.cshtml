@@ -1,0 +1,88 @@
+﻿@model GSPNewProject.Models.Person
+
+@{
+    ViewBag.Title = "Details";
+}
+@section title {
+    @ViewBag.Title
+}
+@section subtitle {
+    Person
+}
+
+
+<div class="form-group">
+    @Html.DisplayNameFor(model => model.DateAdded)
+	<p class="form-control-static">@Html.DisplayFor(model => model.DateAdded)</p>
+</div>
+
+
+<div class="form-group">
+    @Html.DisplayNameFor(model => model.Name)
+	<p class="form-control-static">@Html.DisplayFor(model => model.Name)</p>
+</div>
+
+
+<div class="form-group">
+    @Html.DisplayNameFor(model => model.Age)
+	<p class="form-control-static">@Html.DisplayFor(model => model.Age)</p>
+</div>
+
+
+<div class="form-group">
+    @Html.DisplayNameFor(model => model.BirthDate)
+	<p class="form-control-static">@Html.DisplayFor(model => model.BirthDate)</p>
+</div>
+
+
+<div class="form-group">
+    @Html.DisplayNameFor(model => model.PhoneNumber)
+	<p class="form-control-static">@Html.DisplayFor(model => model.PhoneNumber)</p>
+</div>
+
+
+<div class="form-group">
+    @Html.DisplayNameFor(model => model.EmailAddress)
+	<p class="form-control-static">@Html.DisplayFor(model => model.EmailAddress)</p>
+</div>
+
+
+<div class="form-group">
+    @Html.DisplayNameFor(model => model.Comment)
+	<p class="form-control-static">@Html.DisplayFor(model => model.Comment)</p>
+</div>
+
+
+<div class="form-group">
+    @Html.DisplayNameFor(model => model.Address1)
+	<p class="form-control-static">@Html.DisplayFor(model => model.Address1)</p>
+</div>
+
+
+<div class="form-group">
+    @Html.DisplayNameFor(model => model.Address2)
+	<p class="form-control-static">@Html.DisplayFor(model => model.Address2)</p>
+</div>
+
+
+<div class="form-group">
+    @Html.DisplayNameFor(model => model.City)
+	<p class="form-control-static">@Html.DisplayFor(model => model.City)</p>
+</div>
+
+
+<div class="form-group">
+    @Html.DisplayNameFor(model => model.State)
+	<p class="form-control-static">@Html.DisplayFor(model => model.State)</p>
+</div>
+
+
+<div class="form-group">
+    @Html.DisplayNameFor(model => model.Zip)
+	<p class="form-control-static">@Html.DisplayFor(model => model.Zip)</p>
+</div>
+
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
